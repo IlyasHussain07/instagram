@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Styles from './DisplayPosts.module.css'
 
 import SendIcon from '@material-ui/icons/SendOutlined'
@@ -11,13 +11,13 @@ export function DisplayPosts(props) {
         <div className={Styles.disp__Post}>
             <div className={Styles.post__header}>
                 <div className={Styles.sec__1}>
-                    <img src={props.channelimage} />
+                    <img src={props.channelimage} alt="image1" />
                     <span>{props.channelName}</span>
                 </div>
                 <span> @@@ </span>
             </div>
             <div className={Styles.post__body}>
-                <img src={props.postImage} />
+                <img src={props.postImage} alt="image2" />
             </div>
             <div className={Styles.openion__Section}>
                 <div className={Styles.options}>
@@ -48,7 +48,7 @@ export function VideoPost(props) {
         <div className={Styles.disp__Post}>
             <div className={Styles.post__header}>
                 <div className={Styles.sec__1}>
-                    <img src={props.channelimage} />
+                    <img src={props.channelimage} alt="image3" />
                     <span>{props.channelName}</span>
                 </div>
                 <span> @@@ </span>
