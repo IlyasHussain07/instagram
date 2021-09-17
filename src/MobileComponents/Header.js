@@ -21,11 +21,11 @@ export default function Header() {
         <div>
             <div className={Styles.header__login_Off}>
                 <div className={Styles.Login__Image}>
-                    <img src={LoginImage} />
+                    <img src={LoginImage} alt="image1" />
                 </div>
                 <div className={Styles.header__login__page}>
                     <div className={Styles.instaImage}>
-                        <img src={InstaImage} />
+                        <img src={InstaImage} alt="image2" />
                     </div>
                     <div className={Styles.textBox}>
                         <input type={'text'} placeholder={"Phone number, username, or email"} />
@@ -41,12 +41,12 @@ export default function Header() {
                         <span className={Styles.fb}><FacebookIcon />Log in with Facebook</span><br></br>
                         <p className={Styles.forget}>Forgot Password?</p>
                     </div>
-                    <p className={Styles.signIn}>Don't have an account? <a href={"#"}>Sign up</a></p>
+                    <p className={Styles.signIn}>Don't have an account? <a href="/signup">Sign up</a></p>
                     <div className={Styles.stores}>
                         <span>Get the app.</span>
                         <div className={Styles.storeImages}>
-                            <img src={AppStore} />
-                            <img src={GoogleStore} />
+                            <img src={AppStore} alt="image3" />
+                            <img src={GoogleStore} alt="image4" />
                         </div>
                     </div>
                     <div className={Styles.footer}>
@@ -72,7 +72,7 @@ export default function Header() {
 
             <div className={Styles.header}>
                 <div className={Styles.header__image}>
-                    <img src={InstaImage} />
+                    <img src={InstaImage} alt="image5" />
                 </div>
                 <div className={Styles.messages}>
                     <AddIcon className={Styles.header__Icons} />
@@ -86,7 +86,7 @@ export default function Header() {
                 <ReelIcon className={Styles.header__btm__reel} />
                 <HeartIcon className={Styles.header__btm__Icons} />
                 <div className={Styles.header__btm__image}>
-                    <img src={MyImage} />
+                    <img src={MyImage} alt="image4" />
                 </div>
             </div>
         </div>
