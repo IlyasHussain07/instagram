@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./MobileComponents/Header";
+import Header from "./Components/Header";
 import './App.css'
-import Master from "./MobileComponents/Master";
+import Master from "./Components/Master";
 
 function App() {
   return (
