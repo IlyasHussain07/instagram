@@ -1,0 +1,86 @@
+.profileContainer{
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.profileContainer img{
+    border-radius: 50%;
+    margin-right: 80px;
+}
+.profileDetails{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profileDetails p span{
+    font-weight: 550;
+}
+.description{
+    margin-left: 20px;
+    font-weight: 550;
+}
+.profilePosts{
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    border-top: 1px solid #d2d2d2;
+    position: relative;
+}
+.profileNav{
+    margin-top: 20px;
+}
+.profileNav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profileNav ul li{
+    display: flex;
+    align-items: center;
+}
+.profileNav ul li span{
+    font-size: 14px;
+}
+.navIcons{
+    font-size: 20px !important;
+}
+
+.posts{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 100%;
+}
+.imageContainer img{
+    width: 200px;
+}
+
+
+@media(max-width: 768px){
+    .profileContainer{
+        align-items: flex-start;
+    }
+    .profileContainer img{
+        width: 70px;
+        margin-right: 10px;
+    }
+    .profileDetails{
+        width: 270px;
+    }
+   
+    .profileNav ul li span{
+       display: none;
+    }
+    .navIcons{
+        font-size: 28px !important;
+    }
+    .imageContainer img{
+        width: 130px;
+    }
+}

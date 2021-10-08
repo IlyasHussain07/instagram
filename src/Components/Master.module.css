@@ -1,7 +1,105 @@
-.master{
+
+
+.masterPage{
+    height: 89vh;
+    width: 100%;
     overflow-y: auto;
-    margin-bottom: 20px;    
 }
+.mainPage{
+    max-width: 450px;
+    width: 100%;
+    margin-left: 300px;
+    border: 1px solid black;
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+}
+
+.stories{
+    max-width: 450px;
+    width: 100%;
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background: #fff;
+    padding: 5px 10px;
+    overflow-x: auto;
+    border: 1px solid #d2d2d2;
+}
+.storyContainer{
+    margin-right: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+.storyContainer img{
+    width: 65px;
+    border-radius: 50%;
+    border: 3px solid red;
+    padding: 3px;
+}
+
+.followRequest{
+    position: fixed;
+    top: 80px;
+    right: 420px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #d2d2d2;
+}
+.myProfile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.names p{
+    font-weight: 500;
+}
+.names span{
+    font-size: 14px;
+    color: #a7a7a7;
+}
+.switch p{
+    color: rgb(15, 15, 240);
+    font-weight: 550;
+}
+.footer{
+    position: fixed;
+    top: 420px;
+    right: 420px;
+    width: 300px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
 ::-webkit-scrollbar{
     width: 1px;
+}
+@media(max-width:768px){
+    .mainPage,
+    .stories{
+        margin-left: 0;
+        width: 400px;
+    }
+   
+    .masterPage{
+        margin: auto;
+        width: 400px;
+    }
+}
+@media(max-width: 1200px){
+    .followRequest,
+    .footer{
+        display: none;
+    }
 }

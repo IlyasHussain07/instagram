@@ -20,15 +20,47 @@
     border: 3px solid red;
     padding: 2px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .sec__1 span{
     margin-right: 10px;
+    cursor: pointer;
+}
+.post__body{
+    text-align: center;
+    position: relative;
 }
 .post__body img{
     width: 400px;
+    cursor: pointer;
+}
+.heartContainerOn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    display: block;
+}
+
+.heartContainerOff{
+    display: none;
+}
+.heartContainerOn img{
+    width: 300px;
+    animation: heartAnim 2s 1;
+}
+@keyframes heartAnim{
+    0%{
+        transform: scale(.2);
+    }
+    40%{
+        transform: scale(0.7);
+    }
 }
 .post__body video{
     width: 400px;
+    cursor: pointer;
 }
 .openion__Section{
     display: flex;
@@ -36,7 +68,18 @@
     align-items: center;
     padding: 5px;
 }
-
+.HeartIconOn{
+    font-size: 25px !important;
+    margin-right: 15px;
+    color: red;
+    cursor: pointer;
+}
+.HeartIconOff{
+    font-size: 25px !important;
+    margin-right: 15px;
+    color: #000;
+    cursor: pointer;
+}
 .postIcon{
     font-size: 25px !important;
     margin-right: 15px;
@@ -46,4 +89,42 @@
 }
 .Comments{
     padding: 10px;
+}
+
+
+.explore,
+.explore2{
+    display: flex;
+    justify-content: start;
+}
+.expEct_1{
+    text-align: center;
+}
+.expEct_1 img{
+    width: 400px;
+    height: 350px;
+    cursor: pointer;
+}
+.expEct_2 video{
+    width: 400px;
+    height: 700px;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .explore{
+        width: 400px;
+    }
+    .explore2{
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .expEct_1 img{
+        width: 170px;
+        height: auto;
+    }
+    .expEct_2 video{
+        width: 200px;
+        height: auto;
+    }
 }
